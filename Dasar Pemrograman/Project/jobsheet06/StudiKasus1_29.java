@@ -18,11 +18,11 @@ public class StudiKasus1_29 {
             diskon = 0;
         }totalbayar = totalharga - diskon;
         System.out.println("total harga :" + totalharga);
-        System.out.println("total bayar:"+totalbayar);
-        System.out.println("diskon:"+diskon);
+        System.out.println("total bayar :"+totalbayar);
+        System.out.println("diskon      :"+diskon);
         if (uangbayar > totalbayar){
             kembalian = uangbayar - totalharga;
-            System.out.println("kembalian:"+kembalian);
+            System.out.println("kembalian   :"+kembalian);
         }else{
             System.out.println("uang tidak cukup");
         }
