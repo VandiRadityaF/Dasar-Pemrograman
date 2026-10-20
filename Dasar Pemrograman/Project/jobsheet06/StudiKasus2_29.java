@@ -15,8 +15,6 @@ public class StudiKasus2_29 {
 
         System.out.print("Jenis kegiatan (BELMAWA/BAKORMA/Mandiri/PKM/Lainnya): ");
         jenisKegiatan = sc.nextLine().toLowerCase();
-
-        // Memeriksa jenis kegiatan
         if (jenisKegiatan.equals("belmawa")
                 || jenisKegiatan.equals("bakorma")
                 || jenisKegiatan.equals("mandiri")) {
@@ -47,8 +45,6 @@ public class StudiKasus2_29 {
         } else {
             alasan = "Kegiatan lainnya tidak memperoleh dana penghargaan.";
         }
-
-        // Dokumen hanya diperiksa jika memenuhi syarat kegiatan
         if (berhak) {
             System.out.print("Jumlah dokumen yang diupload (0-4): ");
             jumlahDokumen = sc.nextInt();
@@ -62,8 +58,6 @@ public class StudiKasus2_29 {
                         + (4 - jumlahDokumen) + ".";
             }
         }
-
-        // Menampilkan hasil
         System.out.println("\n===== HASIL VALIDASI =====");
         System.out.println("Nama mahasiswa: " + nama);
 
