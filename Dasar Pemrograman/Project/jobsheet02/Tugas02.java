@@ -1,22 +1,29 @@
 import java.util.Scanner;
-
-public class Tugas02 {
+public class Tugas02{
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int panjang, lebar, diameter, sisi;
+        double luasTanah, luasKolam, luasTaman, sisaTanah;
+        System.out.print("Masukkan panjang tanah: ");
+        panjang = sc.nextInt();
+        System.out.print("Masukkan lebar tanah: ");
+        lebar = sc.nextInt();
+        System.out.print("Masukkan diameter kolam: ");
+        diameter = sc.nextInt();
+        System.out.print("Masukkan panjang sisi taman: ");
+        sisi = sc.nextInt();
 
-        try (Scanner scan = new Scanner(System.in)) {
-            System.out.print ("Masukan gaji pokok:");
-            int gajipokok = scan.nextInt();
+        luasTanah = panjang * lebar;
+        luasKolam = 3.14 * (diameter / 2.0) * (diameter / 2.0);
+        luasTaman = sisi * sisi;
 
-            System.out.print ("Masukan tunjangan anak");
-            int tunjangananak = scan.nextInt();
+        sisaTanah = luasTanah - luasKolam - luasTaman;
 
-            System.out.print("Masukan jumlah anak");
-            int jumlahanak = scan.nextInt();
+        System.out.println("Luas tanah: " + luasTanah + " m2");
+        System.out.println("Luas kolam: " + luasKolam + " m2");
+        System.out.println("Luas taman: " + luasTaman + " m2");
+        System.out.println("Sisa luas tanah: " + sisaTanah + " m2");
 
-            double potongan = 0.10;
-
-            double gajibersih = (gajipokok - (gajipokok * potongan)) + (tunjangananak * jumlahanak);
-            System.out.println("Gaji bersih" + gajibersih);
-        }
+        sc.close();
     }
 }

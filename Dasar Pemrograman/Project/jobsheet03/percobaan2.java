@@ -12,9 +12,6 @@ public class percobaan2{
         int luas = panjang * lebar;
 
         System.out.println("luas lapangan ="+ luas);
-
-
-
     }
 
     }
