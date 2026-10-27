@@ -7,7 +7,7 @@ public class tugas2_29{
             System.out.println("masukan jenis kendaraan");
             System.out.println("1. mobil");
             System.out.println("2. motor");
-            System.out.println("0. keluar");
+            System.out.println("0SS. keluar");
             jenis = sc.nextInt();
             if(jenis == 1){
                 System.out.println("masukan durasi parkir mobil");
