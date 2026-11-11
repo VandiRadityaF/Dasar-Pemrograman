@@ -9,8 +9,9 @@ public class ArrayNilai29{
             nilaiakhir[i]=sc.nextInt();
         }
         for (int i=0;i<nilaiakhir.length;i++){
-            String status = (nilaiakhir[i]>70?"LULUS":"TIDAK LULUS");
-            System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiakhir[i] + " (" + status + ")"); 
+           if (nilaiakhir[i] > 70) {
+                System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiakhir[i] + " (LULUS)");
+            }
         }
     }
 }

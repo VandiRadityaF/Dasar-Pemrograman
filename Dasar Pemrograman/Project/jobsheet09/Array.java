@@ -20,6 +20,13 @@ public class Array{
             if (nilaimhs[i]>nilaib){ nilaib=nilaimhs[i];}
             if (nilaimhs[i]<nilair)  nilair=nilaimhs[i];
         }
+        if (rata >= 85){
+            System.out.println("sangat baik");
+        }else if (rata >= 75){
+            System.out.println("baik");
+        }else if (rata >= 65){
+            System.out.println("perlu pendampingan");
+        }
         System.out.println("nilai tertinggi mahasiswa ="+nilaib);
         System.out.println("nilai terendah mahasiswa ="+nilair);
     }
