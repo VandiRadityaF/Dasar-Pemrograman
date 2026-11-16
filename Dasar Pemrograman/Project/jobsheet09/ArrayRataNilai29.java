@@ -1,15 +1,18 @@
 import java.util.Scanner;
-public class Array{
+public class ArrayRataNilai29{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int nilaimhs[] = new int[10];
         int total=0;
         double rata;
+        int jmlLulus=0;
 
         for (int i=0;i<nilaimhs.length;i++){
             System.out.println("masukan nilai mahasiswa ke-"+(i+1)+":");
             nilaimhs[i] = sc.nextInt();
             total +=nilaimhs[1];
+            if (nilaimhs[i] > 70) {
+                jmlLulus++;}
         }
         rata = total/nilaimhs.length;
         System.out.println("total nilai mahasiswa ="+total);
@@ -29,5 +32,6 @@ public class Array{
         }
         System.out.println("nilai tertinggi mahasiswa ="+nilaib);
         System.out.println("nilai terendah mahasiswa ="+nilair);
+        System.out.println("jumlah mahasiswa yang lulus ="+jmlLulus);
     }
 }
