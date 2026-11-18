@@ -1,4 +1,4 @@
-public class studikasus11 {
+public class studikasus1 {
     public static void main(String args[]) {
         int i = 0;
         do {

@@ -1,4 +1,4 @@
-public class pp3 {
+public class latihan2 {
     public static void main(String[] args){
         int n=5,i,j;
         char huruf = 'a';

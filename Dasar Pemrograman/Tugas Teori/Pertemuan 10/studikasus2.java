@@ -1,4 +1,4 @@
-public class studikasus1 {
+public class studikasus2 {
     public static void main(String[] args){
         int n=10,i,j;
         for(i=0;i<n;i++){
